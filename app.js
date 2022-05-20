@@ -37,7 +37,7 @@ fs.readFile('data.log', 'utf8', (err, data) => {
   
 
   arrayToTxtFile(result, './result.txt', err => {})
-  console.log('Fastest transaction is: ',result[0])
+  console.log('Fastest transaction id is: ',result[0][1],' with time: ',result[0][0])
   console.log('Average time is: ',averageTime(result))
 
 });
