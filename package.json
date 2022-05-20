@@ -1,0 +1,19 @@
+{
+  "name": "regex-logfile",
+  "version": "1.0.0",
+  "description": "find string in two line",
+  "main": "js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vulieumang/regex-logfile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vulieumang/regex-logfile/issues"
+  },
+  "homepage": "https://github.com/vulieumang/regex-logfile#readme"
+}

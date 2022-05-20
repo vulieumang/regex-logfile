@@ -1,0 +1,321 @@
+19-3-2020 02:19:17.887	INFO	16	190	transaction 17018 begin
+19-3-2020 02:19:18.018	INFO	19	190	mailbox allocated for route
+19-3-2020 02:19:18.018	INFO	15	186	end transaction 17018
+19-3-2020 02:19:18.908	INFO	18	194	transaction 17021 begin
+19-3-2020 02:19:19.165	INFO	10	183	mailbox allocated for rsvp-udp
+19-3-2020 02:19:19.165	INFO	19	185	end transaction 17021
+19-3-2020 02:19:19.370	INFO	16	184	transaction 17024 begin
+19-3-2020 02:19:19.554	INFO	12	190	mailbox allocated for rsvp-udp
+19-3-2020 02:19:19.554	INFO	13	191	end transaction 17024
+19-3-2020 02:19:20.233	INFO	17	188	transaction 17027 begin
+19-3-2020 02:19:20.413	INFO	11	187	creating mailslot for terminate
+19-3-2020 02:19:20.413	INFO	11	183	end transaction 17027
+19-3-2020 02:19:24.138	INFO	18	190	transaction 17030 begin
+19-3-2020 02:19:24.270	INFO	18	184	interface 127.0.0.1, entity for rsvp allocated and initialized
+19-3-2020 02:19:24.270	INFO	12	184	end transaction 17030
+19-3-2020 02:19:24.823	INFO	19	184	transaction 17033 begin
+19-3-2020 02:19:25.080	INFO	18	189	mailbox allocated for rsvp-api
+19-3-2020 02:19:25.080	INFO	19	185	end transaction 17033
+19-3-2020 02:19:26.762	INFO	18	188	transaction 17036 begin
+19-3-2020 02:19:26.926	INFO	16	191	creating socket for querying route
+19-3-2020 02:19:26.926	INFO	14	187	end transaction 17036
+19-3-2020 02:19:27.924	INFO	18	184	transaction 17039 begin
+19-3-2020 02:19:28.027	INFO	11	189	calculating thresholds...
+19-3-2020 02:19:28.027	INFO	19	185	end transaction 17039
+19-3-2020 02:19:28.916	INFO	16	192	transaction 17042 begin
+19-3-2020 02:19:29.101	INFO	11	187	creating mailslot for (broken) pipe
+19-3-2020 02:19:29.101	INFO	16	183	end transaction 17042
+19-3-2020 02:19:32.982	INFO	16	187	transaction 17045 begin
+19-3-2020 02:19:33.117	INFO	10	183	money transfer loaded from queue
+19-3-2020 02:19:33.117	INFO	11	194	end transaction 17045
+19-3-2020 02:19:35.237	INFO	14	194	transaction 17048 begin
+19-3-2020 02:19:35.388	INFO	17	187	loading data for user
+19-3-2020 02:19:35.388	INFO	16	191	end transaction 17048
+19-3-2020 02:19:36.570	INFO	19	183	transaction 17051 begin
+19-3-2020 02:19:36.769	INFO	17	193	mailbox allocated for rsvp
+19-3-2020 02:19:36.769	INFO	16	190	end transaction 17051
+19-3-2020 02:19:41.644	INFO	15	184	transaction 17054 begin
+19-3-2020 02:19:41.838	INFO	12	184	mailbox allocated for rsvp
+19-3-2020 02:19:41.838	INFO	16	188	end transaction 17054
+19-3-2020 02:19:43.041	INFO	18	191	transaction 17057 begin
+19-3-2020 02:19:43.196	INFO	18	194	master allocated for INFO and ERROR dump
+19-3-2020 02:19:43.196	INFO	17	190	end transaction 17057
+19-3-2020 02:19:44.377	INFO	15	186	transaction 17060 begin
+19-3-2020 02:19:44.483	INFO	18	187	ready to accept informational socket connection
+19-3-2020 02:19:44.483	INFO	18	191	end transaction 17060
+19-3-2020 02:19:51.826	INFO	14	187	transaction 17063 begin
+19-3-2020 02:19:51.970	INFO	18	191	no mailbox necessary for forward
+19-3-2020 02:19:51.970	INFO	10	189	end transaction 17063
+19-3-2020 02:19:52.900	INFO	18	193	transaction 17066 begin
+19-3-2020 02:19:53.076	INFO	11	194	no mailbox necessary for forward
+19-3-2020 02:19:53.076	INFO	10	183	end transaction 17066
+19-3-2020 02:19:53.775	INFO	16	189	transaction 17069 begin
+19-3-2020 02:19:53.894	INFO	12	188	creating socket for traffic CONTROL module
+19-3-2020 02:19:53.894	INFO	19	188	end transaction 17069
+19-3-2020 02:19:55.265	INFO	14	183	transaction 17072 begin
+19-3-2020 02:19:55.419	INFO	14	194	out of INFO allcations
+19-3-2020 02:19:55.419	INFO	12	192	end transaction 17072
+19-3-2020 02:19:55.457	INFO	10	191	transaction 17075 begin
+19-3-2020 02:19:55.581	INFO	10	194	creating mailslot for (broken) pipe
+19-3-2020 02:19:55.581	INFO	12	185	end transaction 17075
+19-3-2020 02:19:56.477	INFO	18	184	transaction 17078 begin
+19-3-2020 02:19:56.648	INFO	15	194	calculating thresholds...
+19-3-2020 02:19:56.648	INFO	15	188	end transaction 17078
+19-3-2020 02:19:57.776	INFO	15	192	transaction 17081 begin
+19-3-2020 02:19:57.903	INFO	19	186	out of INFO allcations
+19-3-2020 02:19:57.903	INFO	10	191	end transaction 17081
+19-3-2020 02:19:58.415	INFO	13	192	transaction 17084 begin
+19-3-2020 02:19:58.593	INFO	10	190	creating mailslot for RSVP
+19-3-2020 02:19:58.593	INFO	19	186	end transaction 17084
+19-3-2020 02:20:04.431	INFO	17	187	transaction 17087 begin
+19-3-2020 02:20:04.548	INFO	17	185	mailbox allocated for rsvp-udp
+19-3-2020 02:20:04.548	INFO	14	192	end transaction 17087
+19-3-2020 02:20:05.789	INFO	10	189	transaction 17090 begin
+19-3-2020 02:20:05.951	INFO	17	188	no mailbox necessary for forward
+19-3-2020 02:20:05.951	INFO	15	183	end transaction 17090
+19-3-2020 02:20:06.081	INFO	10	185	transaction 17093 begin
+19-3-2020 02:20:06.242	INFO	13	184	parsing transaction entries
+19-3-2020 02:20:06.242	INFO	13	193	end transaction 17093
+19-3-2020 02:20:10.696	INFO	13	190	transaction 17096 begin
+19-3-2020 02:20:10.822	INFO	14	193	creating mailslot for RSVP client API
+19-3-2020 02:20:10.822	INFO	14	184	end transaction 17096
+19-3-2020 02:20:11.067	INFO	13	186	transaction 17099 begin
+19-3-2020 02:20:11.260	INFO	11	187	creating mailslot for RSVP
+19-3-2020 02:20:11.260	INFO	19	190	end transaction 17099
+19-3-2020 02:20:12.363	INFO	15	192	transaction 17102 begin
+19-3-2020 02:20:12.523	INFO	17	193	mailbox allocated for route
+19-3-2020 02:20:12.523	INFO	17	183	end transaction 17102
+19-3-2020 02:20:12.939	INFO	18	185	transaction 17105 begin
+19-3-2020 02:20:13.068	INFO	15	189	mailbox allocated for pipe
+19-3-2020 02:20:13.068	INFO	12	185	end transaction 17105
+19-3-2020 02:20:18.230	INFO	19	191	transaction 17108 begin
+19-3-2020 02:20:18.383	INFO	14	190	mailbox allocated for pipe
+19-3-2020 02:20:18.383	INFO	17	187	end transaction 17108
+19-3-2020 02:20:19.631	INFO	15	189	transaction 17111 begin
+19-3-2020 02:20:19.736	INFO	19	193	no mailbox necessary for forward
+19-3-2020 02:20:19.736	INFO	17	187	end transaction 17111
+19-3-2020 02:20:20.160	INFO	11	184	transaction 17114 begin
+19-3-2020 02:20:20.309	INFO	12	184	creating mailslot for RSVP client API
+19-3-2020 02:20:20.309	INFO	12	190	end transaction 17114
+19-3-2020 02:20:22.251	INFO	19	190	transaction 17117 begin
+19-3-2020 02:20:22.419	INFO	11	191	creating mailslot for RSVP client API
+19-3-2020 02:20:22.419	INFO	16	187	end transaction 17117
+19-3-2020 02:20:23.358	INFO	10	187	transaction 17120 begin
+19-3-2020 02:20:23.483	INFO	12	185	creating mailslot for dump
+19-3-2020 02:20:23.483	INFO	18	187	end transaction 17120
+19-3-2020 02:20:24.569	INFO	10	190	transaction 17123 begin
+19-3-2020 02:20:24.758	INFO	17	188	creating mailslot for route engine - informational socket
+19-3-2020 02:20:24.758	INFO	19	187	end transaction 17123
+19-3-2020 02:20:25.021	INFO	12	183	transaction 17126 begin
+19-3-2020 02:20:25.155	INFO	12	183	no mailbox necessary for forward
+19-3-2020 02:20:25.155	INFO	16	189	end transaction 17126
+19-3-2020 02:20:26.636	INFO	12	192	transaction 17129 begin
+19-3-2020 02:20:26.749	INFO	10	184	interface 127.0.0.1, entity for rsvp allocated and initialized
+19-3-2020 02:20:26.749	INFO	17	190	end transaction 17129
+19-3-2020 02:20:27.396	INFO	16	190	transaction 17132 begin
+19-3-2020 02:20:27.563	INFO	12	192	parsing transaction entries
+19-3-2020 02:20:27.563	INFO	19	187	end transaction 17132
+19-3-2020 02:20:28.436	INFO	15	186	transaction 17135 begin
+19-3-2020 02:20:28.592	INFO	12	191	master allocated for INFO and ERROR dump
+19-3-2020 02:20:28.592	INFO	16	188	end transaction 17135
+19-3-2020 02:20:29.628	INFO	19	194	transaction 17138 begin
+19-3-2020 02:20:29.775	INFO	13	192	loading data for user
+19-3-2020 02:20:29.775	INFO	14	192	end transaction 17138
+19-3-2020 02:20:30.445	INFO	14	187	transaction 17141 begin
+19-3-2020 02:20:30.632	INFO	17	183	out of INFO allcations
+19-3-2020 02:20:30.632	INFO	14	189	end transaction 17141
+19-3-2020 02:20:32.048	INFO	19	194	transaction 17144 begin
+19-3-2020 02:20:32.305	INFO	15	187	mailbox allocated for rsvp-api
+19-3-2020 02:20:32.305	INFO	13	183	end transaction 17144
+19-3-2020 02:20:34.478	INFO	12	188	transaction 17147 begin
+19-3-2020 02:20:34.598	INFO	17	183	no mailbox necessary for traffic-CONTROL
+19-3-2020 02:20:34.598	INFO	16	183	end transaction 17147
+19-3-2020 02:20:38.401	INFO	15	189	transaction 17150 begin
+19-3-2020 02:20:38.599	INFO	12	187	loopback to avoid ERROR
+19-3-2020 02:20:38.599	INFO	15	190	end transaction 17150
+19-3-2020 02:20:38.870	INFO	19	187	transaction 17153 begin
+19-3-2020 02:20:39.127	INFO	17	183	ready to accept informational socket connection
+19-3-2020 02:20:39.127	INFO	11	190	end transaction 17153
+19-3-2020 02:20:41.593	INFO	18	187	transaction 17156 begin
+19-3-2020 02:20:41.789	INFO	17	183	creating mailslot for RSVP client API
+19-3-2020 02:20:41.789	INFO	18	192	end transaction 17156
+19-3-2020 02:20:44.916	INFO	17	190	transaction 17159 begin
+19-3-2020 02:20:45.053	INFO	17	193	no mailbox necessary for forward
+19-3-2020 02:20:45.053	INFO	18	191	end transaction 17159
+19-3-2020 02:20:45.453	INFO	11	191	transaction 17162 begin
+19-3-2020 02:20:45.601	INFO	19	188	mailbox allocated for dump
+19-3-2020 02:20:45.601	INFO	12	190	end transaction 17162
+19-3-2020 02:20:45.694	INFO	10	184	transaction 17165 begin
+19-3-2020 02:20:45.834	INFO	15	193	creating socket for traffic CONTROL module
+19-3-2020 02:20:45.834	INFO	16	183	end transaction 17165
+19-3-2020 02:20:46.645	INFO	10	191	transaction 17168 begin
+19-3-2020 02:20:46.754	INFO	19	184	calculating thresholds...
+19-3-2020 02:20:46.754	INFO	15	191	end transaction 17168
+19-3-2020 02:20:47.677	INFO	17	191	transaction 17171 begin
+19-3-2020 02:20:47.835	INFO	12	185	mailbox allocated for route
+19-3-2020 02:20:47.835	INFO	11	188	end transaction 17171
+19-3-2020 02:20:48.408	INFO	16	186	transaction 17174 begin
+19-3-2020 02:20:48.581	INFO	18	185	money transfer loaded from queue
+19-3-2020 02:20:48.581	INFO	16	184	end transaction 17174
+19-3-2020 02:20:50.203	INFO	11	191	transaction 17177 begin
+19-3-2020 02:20:50.339	INFO	19	186	calculating thresholds...
+19-3-2020 02:20:50.339	INFO	10	184	end transaction 17177
+19-3-2020 02:20:53.194	INFO	16	184	transaction 17180 begin
+19-3-2020 02:20:53.351	INFO	14	192	creating socket for querying route
+19-3-2020 02:20:53.351	INFO	11	191	end transaction 17180
+19-3-2020 02:20:56.079	INFO	13	183	transaction 17183 begin
+19-3-2020 02:20:56.197	INFO	17	192	master allocated for INFO and ERROR dump
+19-3-2020 02:20:56.197	INFO	12	187	end transaction 17183
+19-3-2020 02:20:58.901	INFO	15	184	transaction 17186 begin
+19-3-2020 02:20:59.053	INFO	11	193	mailbox allocated for dump
+19-3-2020 02:20:59.053	INFO	10	187	end transaction 17186
+19-3-2020 02:20:59.186	INFO	11	187	transaction 17189 begin
+19-3-2020 02:20:59.328	INFO	19	194	loopback to avoid ERROR
+19-3-2020 02:20:59.328	INFO	16	185	end transaction 17189
+19-3-2020 02:21:00.598	INFO	18	187	transaction 17192 begin
+19-3-2020 02:21:00.793	INFO	12	185	creating mailslot for dump
+19-3-2020 02:21:00.793	INFO	19	193	end transaction 17192
+19-3-2020 02:21:01.766	INFO	15	187	transaction 17195 begin
+19-3-2020 02:21:01.909	INFO	19	189	creating mailslot for RSVP
+19-3-2020 02:21:01.909	INFO	14	187	end transaction 17195
+19-3-2020 02:21:04.006	INFO	12	188	transaction 17198 begin
+19-3-2020 02:21:04.136	INFO	17	188	ready to accept informational socket connection
+19-3-2020 02:21:04.136	INFO	18	194	end transaction 17198
+19-3-2020 02:21:07.115	INFO	19	189	transaction 17201 begin
+19-3-2020 02:21:07.287	INFO	18	191	mailbox allocated for pipe
+19-3-2020 02:21:07.287	INFO	16	184	end transaction 17201
+19-3-2020 02:21:09.257	INFO	15	194	transaction 17204 begin
+19-3-2020 02:21:09.426	INFO	15	185	creating mailslot for (broken) pipe
+19-3-2020 02:21:09.426	INFO	13	191	end transaction 17204
+19-3-2020 02:21:09.720	INFO	11	188	transaction 17207 begin
+19-3-2020 02:21:09.897	INFO	17	188	calculating thresholds...
+19-3-2020 02:21:09.897	INFO	11	184	end transaction 17207
+19-3-2020 02:21:09.897	INFO	17	183	transaction 17210 begin
+19-3-2020 02:21:10.018	INFO	18	193	creating mailslot for RSVP
+19-3-2020 02:21:10.018	INFO	19	183	end transaction 17210
+19-3-2020 02:21:11.916	INFO	13	189	transaction 17213 begin
+19-3-2020 02:21:12.116	INFO	19	193	master allocated for INFO and ERROR dump
+19-3-2020 02:21:12.116	INFO	18	188	end transaction 17213
+19-3-2020 02:21:13.251	INFO	16	184	transaction 17216 begin
+19-3-2020 02:21:13.441	INFO	19	190	money transfer loaded from queue
+19-3-2020 02:21:13.441	INFO	19	189	end transaction 17216
+19-3-2020 02:21:14.332	INFO	16	189	transaction 17219 begin
+19-3-2020 02:21:14.529	INFO	12	189	loopback to avoid ERROR
+19-3-2020 02:21:14.529	INFO	19	189	end transaction 17219
+19-3-2020 02:21:15.936	INFO	18	194	transaction 17222 begin
+19-3-2020 02:21:16.038	INFO	17	186	mailbox allocated for route
+19-3-2020 02:21:16.038	INFO	11	193	end transaction 17222
+19-3-2020 02:21:16.122	INFO	13	188	transaction 17225 begin
+19-3-2020 02:21:16.245	INFO	18	191	mailbox allocated for route
+19-3-2020 02:21:16.245	INFO	15	187	end transaction 17225
+19-3-2020 02:21:17.814	INFO	18	186	transaction 17228 begin
+19-3-2020 02:21:17.936	INFO	11	184	loopback to avoid ERROR
+19-3-2020 02:21:17.936	INFO	14	189	end transaction 17228
+19-3-2020 02:21:20.527	INFO	17	192	transaction 17231 begin
+19-3-2020 02:21:20.635	INFO	15	190	mailbox allocated for rsvp
+19-3-2020 02:21:20.635	INFO	17	189	end transaction 17231
+19-3-2020 02:21:22.871	INFO	10	187	transaction 17234 begin
+19-3-2020 02:21:23.046	INFO	14	192	creating socket for traffic CONTROL module
+19-3-2020 02:21:23.046	INFO	14	188	end transaction 17234
+19-3-2020 02:21:24.544	INFO	10	183	transaction 17237 begin
+19-3-2020 02:21:24.725	INFO	15	190	creating mailslot for dump
+19-3-2020 02:21:24.725	INFO	12	187	end transaction 17237
+19-3-2020 02:21:27.020	INFO	18	188	transaction 17240 begin
+19-3-2020 02:21:27.185	INFO	15	184	creating mailslot for (broken) pipe
+19-3-2020 02:21:27.185	INFO	10	187	end transaction 17240
+19-3-2020 02:21:28.865	INFO	13	189	transaction 17243 begin
+19-3-2020 02:21:28.981	INFO	12	186	no mailbox necessary for traffic-CONTROL
+19-3-2020 02:21:28.981	INFO	11	190	end transaction 17243
+19-3-2020 02:21:31.132	INFO	19	193	transaction 17247 begin
+19-3-2020 02:21:31.232	INFO	10	194	no mailbox necessary for forward
+19-3-2020 02:21:31.232	INFO	16	194	end transaction 17247
+19-3-2020 02:21:31.531	INFO	15	184	transaction 17249 begin
+19-3-2020 02:21:31.638	INFO	18	186	mailbox allocated for terminate
+19-3-2020 02:21:31.638	INFO	17	192	end transaction 17249
+19-3-2020 02:21:32.040	INFO	10	184	transaction 17252 begin
+19-3-2020 02:21:32.150	INFO	10	188	creating socket for querying route
+19-3-2020 02:21:32.150	INFO	15	192	end transaction 17252
+19-3-2020 02:21:34.194	INFO	13	187	transaction 17255 begin
+19-3-2020 02:21:34.298	INFO	19	192	creating mailslot for RSVP
+19-3-2020 02:21:34.298	INFO	12	191	end transaction 17255
+19-3-2020 02:21:37.358	INFO	13	184	transaction 17258 begin
+19-3-2020 02:21:37.532	INFO	10	184	mailbox allocated for pipe
+19-3-2020 02:21:37.532	INFO	10	191	end transaction 17258
+19-3-2020 02:21:39.792	INFO	16	191	transaction 17261 begin
+19-3-2020 02:21:39.930	INFO	19	188	creating mailslot for dump
+19-3-2020 02:21:39.930	INFO	17	183	end transaction 17261
+19-3-2020 02:21:40.652	INFO	15	183	transaction 17264 begin
+19-3-2020 02:21:40.834	INFO	13	193	parsing transaction entries
+19-3-2020 02:21:40.834	INFO	18	191	end transaction 17264
+19-3-2020 02:21:41.579	INFO	14	192	transaction 17267 begin
+19-3-2020 02:21:41.724	INFO	18	183	mailbox allocated for rsvp
+19-3-2020 02:21:41.724	INFO	15	186	end transaction 17267
+19-3-2020 02:21:42.875	INFO	17	192	transaction 17270 begin
+19-3-2020 02:21:43.003	INFO	15	193	mailbox allocated for rsvp-udp
+19-3-2020 02:21:43.003	INFO	15	185	end transaction 17270
+19-3-2020 02:21:45.504	INFO	12	193	transaction 17273 begin
+19-3-2020 02:21:45.618	INFO	18	186	no mailbox necessary for forward
+19-3-2020 02:21:45.618	INFO	11	186	end transaction 17273
+19-3-2020 02:21:45.861	INFO	19	194	transaction 17276 begin
+19-3-2020 02:21:46.027	INFO	11	190	mailbox allocated for pipe
+19-3-2020 02:21:46.027	INFO	14	183	end transaction 17276
+19-3-2020 02:21:46.469	INFO	13	191	transaction 17279 begin
+19-3-2020 02:21:46.632	INFO	13	191	loopback to avoid ERROR
+19-3-2020 02:21:46.632	INFO	16	185	end transaction 17279
+19-3-2020 02:21:48.112	INFO	15	185	transaction 17282 begin
+19-3-2020 02:21:48.223	INFO	13	189	money transfer loaded from queue
+19-3-2020 02:21:48.223	INFO	13	192	end transaction 17282
+19-3-2020 02:21:48.223	INFO	18	190	transaction 17285 begin
+19-3-2020 02:21:48.338	INFO	15	186	out of INFO allcations
+19-3-2020 02:21:48.338	INFO	16	189	end transaction 17285
+19-3-2020 02:21:50.583	INFO	18	187	transaction 17288 begin
+19-3-2020 02:21:50.766	INFO	10	186	interface 127.0.0.1, entity for rsvp allocated and initialized
+19-3-2020 02:21:50.766	INFO	11	192	end transaction 17288
+19-3-2020 02:21:52.301	INFO	18	185	transaction 17291 begin
+19-3-2020 02:21:52.492	INFO	10	184	loading data for user
+19-3-2020 02:21:52.492	INFO	15	186	end transaction 17291
+19-3-2020 02:21:54.762	INFO	13	194	transaction 17294 begin
+19-3-2020 02:21:54.921	INFO	12	188	no mailbox necessary for traffic-CONTROL
+19-3-2020 02:21:54.921	INFO	17	193	end transaction 17294
+19-3-2020 02:21:54.921	INFO	19	190	transaction 17297 begin
+19-3-2020 02:21:55.178	INFO	16	188	ready to accept informational socket connection
+19-3-2020 02:21:55.178	INFO	11	186	end transaction 17297
+19-3-2020 02:21:55.610	INFO	11	190	transaction 17300 begin
+19-3-2020 02:21:55.802	INFO	16	192	no mailbox necessary for forward
+19-3-2020 02:21:55.802	INFO	17	188	end transaction 17300
+19-3-2020 02:21:55.977	INFO	16	183	transaction 17303 begin
+19-3-2020 02:21:56.163	INFO	17	185	creating mailslot for dump
+19-3-2020 02:21:56.163	INFO	11	189	end transaction 17303
+19-3-2020 02:21:58.907	INFO	17	184	transaction 17306 begin
+19-3-2020 02:21:59.040	INFO	10	194	creating mailslot for route engine - informational socket
+19-3-2020 02:21:59.040	INFO	16	186	end transaction 17306
+19-3-2020 02:21:59.213	INFO	13	190	transaction 17309 begin
+19-3-2020 02:21:59.354	INFO	15	194	mailbox allocated for route
+19-3-2020 02:21:59.354	INFO	12	189	end transaction 17309
+19-3-2020 02:22:02.571	INFO	14	192	transaction 17312 begin
+19-3-2020 02:22:02.759	INFO	18	188	mailbox allocated for dump
+19-3-2020 02:22:02.759	INFO	14	194	end transaction 17312
+19-3-2020 02:22:02.886	INFO	18	186	transaction 17315 begin
+19-3-2020 02:22:02.987	INFO	19	193	creating socket for traffic CONTROL module
+19-3-2020 02:22:02.987	INFO	16	187	end transaction 17315
+19-3-2020 02:22:05.840	INFO	14	185	transaction 17318 begin
+19-3-2020 02:22:05.952	INFO	12	192	interface 127.0.0.1, entity for rsvp allocated and initialized
+19-3-2020 02:22:05.952	INFO	10	187	end transaction 17318
+19-3-2020 02:22:07.985	INFO	18	186	transaction 17321 begin
+19-3-2020 02:22:08.242	INFO	10	191	calculating thresholds...
+19-3-2020 02:22:08.242	INFO	12	188	end transaction 17321
+19-3-2020 02:22:09.545	INFO	18	183	transaction 17324 begin
+19-3-2020 02:22:09.684	INFO	12	187	interface 127.0.0.1, entity for rsvp allocated and initialized
+19-3-2020 02:22:09.684	INFO	18	187	end transaction 17324
+19-3-2020 02:22:09.772	INFO	13	192	transaction 17327 begin
+19-3-2020 02:22:09.942	INFO	14	188	master allocated for INFO and ERROR dump
+19-3-2020 02:22:09.942	INFO	16	185	end transaction 17327
+19-3-2020 02:22:11.412	INFO	12	184	transaction 17330 begin
+19-3-2020 02:22:11.558	INFO	14	186	creating socket for querying route
+19-3-2020 02:22:11.558	INFO	16	183	end transaction 17330
+19-3-2020 02:22:11.991	INFO	13	190	transaction 17333 begin
+19-3-2020 02:22:12.248	INFO	16	189	parsing transaction entries
+19-3-2020 02:22:12.248	INFO	16	183	end transaction 17333
+19-3-2020 02:22:14.823	INFO	19	187	transaction 17336 begin
+19-3-2020 02:22:15.002	INFO	14	189	creating mailslot for RSVP
+19-3-2020 02:22:15.002	INFO	15	193	end transaction 17336
