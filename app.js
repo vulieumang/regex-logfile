@@ -37,7 +37,7 @@ fs.readFile('data.log', 'utf8', (err, data) => {
   var result = IdAndTime.sort((a,b) => a[0] - b[0])
   
 
-  arrayToTxtFile(result, './test-output.txt', err => {
+  arrayToTxtFile(result, './result.txt', err => {
     if(err) {
       console.error(err)
       return
