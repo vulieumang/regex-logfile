@@ -5,9 +5,9 @@
 từ file logfile.log
 chạy lệnh
 
-`awk '/transaction(.*[^\s]+\s*)begin/,/end transaction/' logfile.log > tran.log`
+`awk '/transaction(.*[^\s]+\s*)begin/,/end transaction/' logfile.log > data.log`
 
-để log group transaction ra file tran.log
+để log group transaction ra file data.log
 
 
 rồi xử lý tiếp bằng nodejs trong app.js
