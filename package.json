@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/vulieumang/regex-logfile/issues"
   },
-  "homepage": "https://github.com/vulieumang/regex-logfile#readme"
+  "homepage": "https://github.com/vulieumang/regex-logfile#readme",
+  "dependencies": {
+    "array-to-txt-file": "^1.0.2",
+    "moment": "^2.29.3"
+  }
 }
