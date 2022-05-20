@@ -5,7 +5,7 @@
 từ file logfile.log
 chạy lệnh
 
-awk '/transaction(.*[^\s]+\s*)begin/,/end transaction/' logfile.log > tran.log
+`awk '/transaction(.*[^\s]+\s*)begin/,/end transaction/' logfile.log > tran.log`
 
 để log group transaction ra file tran.log
 
