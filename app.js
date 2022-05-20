@@ -26,8 +26,7 @@ fs.readFile('data.log', 'utf8', (err, data) => {
       });
   }
   // arr = array with each element is group start - end transaction
-  var time1 = getMilisecondsExcuteGroup(arr[1])
-  var id1 = getIdTransactional(arr[1])
+  
  
   var IdAndTime = []
   arr.forEach(element => {
@@ -37,13 +36,9 @@ fs.readFile('data.log', 'utf8', (err, data) => {
   var result = IdAndTime.sort((a,b) => a[0] - b[0])
   
 
-  arrayToTxtFile(result, './result.txt', err => {
-    if(err) {
-      console.error(err)
-      return
-    }
-    console.log('Successfully wrote to txt file')
-  })
+  arrayToTxtFile(result, './result.txt', err => {})
+  console.log('Fastest transaction is: ',result[0])
+  console.log('Average time is: ',averageTime(result))
 
 });
 
@@ -68,4 +63,12 @@ function getIdTransactional(group){
   var match = regex.exec(info);
   
  return match[1]
+}
+
+function averageTime(arr){
+  var sumTime = 0;
+  arr.forEach(element => {
+    sumTime+=parseInt(element[0])
+  });
+  return sumTime/arr.length;
 }
