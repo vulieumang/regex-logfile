@@ -15,7 +15,7 @@ chạy lệnh
 19-3-2020 02:19:28.027	INFO	19	185	end transaction 17039`
 </pre>
 
-Nếu xử lý luôn được bằng JS thì tốt hơn => đang update
+
 
 Dùng node đọc file data.log
 // đọc file 
@@ -40,3 +40,10 @@ arrGroupTransaction.forEach(element => {
 // ghi arr  ra file txt
 
 `arrayToTxtFile(result, './result.txt', err => {})`
+
+================================================================
+#Mục tiêu tiếp theo
+1. Nếu xử lý luôn được bằng JS ko cần dùng lệnh awk
+2. lọc theo ngày, và tất cã các ngày
+3. tạo thành module để đưa lên npm
+================================================================
