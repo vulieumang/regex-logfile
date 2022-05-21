@@ -53,6 +53,7 @@ function averageTime(arr){
   return sumTime/arr.length;
 }
 function groupTranaction(string){
+  // regex này chưa tối ưu vì chỉ lọc được ngày 19-3, cần tìm lọc được tất cã các ngày hoặc theo range ngày 
   const regex = /19-3-2020(.*?)(?=end transaction)/gms;
   var arr=[];
   let m;
@@ -63,7 +64,7 @@ function groupTranaction(string){
       }
       // The result can be accessed through the `m`-variable.
       m.forEach((match, groupIndex) => {
-          console.log(`${match}`);
+          // console.log(`${match}`);
           arr.push(match);
       });
   }
