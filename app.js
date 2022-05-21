@@ -2,38 +2,28 @@ const fs = require('fs');
 const moment = require('moment');
 const arrayToTxtFile = require('array-to-txt-file')
 
-fs.readFile('data.log', 'utf8', (err, data) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  const regex = /19-3-2020(.*?)(?=end transaction)/gms;
-  var arr=[];
-  let m;
-  while ((m = regex.exec(data)) !== null) {
-      // This is necessary to avoid infinite loops with zero-width matches
-      if (m.index === regex.lastIndex) {
-          regex.lastIndex++;
-      }
-      // The result can be accessed through the `m`-variable.
-      m.forEach((match, groupIndex) => {
-          // console.log(`Found match, group ${groupIndex}: ${match}`);
-          arr.push(match);
-      });
-  }
-  // arr = array with each element is group start - end transaction
 
-  var IdAndTime = []
-  arr.forEach(element => {
-    IdAndTime.push([getMilisecondsExcuteGroup(element),getIdTransactional(element)])
+const main = async () => {
+  // đọc file 
+  const data = await fs.promises.readFile('data.log', 'utf8')
+  // gom các nhóm transaction lại
+  var arrGroupTransaction = groupTranaction(data)
+  // tạo ra array với time và id
+  var timeAndId = []
+  arrGroupTransaction.forEach(element => {
+    timeAndId.push([getMilisecondsExcuteGroup(element),getIdTransactional(element)])
   });
- 
-  var result = IdAndTime.sort((a,b) => a[0] - b[0])
+  // sắp xếp time từ bé tới lớn
+  var result = timeAndId.sort((a,b) => a[0] - b[0])
+  // ghi arr  ra file txt
   arrayToTxtFile(result, './result.txt', err => {})
+
   console.log('Fastest transaction id is: ',result[0][1],' with time: ',result[0][0])
   console.log('Average time is: ',averageTime(result))
+  
+}
 
-});
+main()
 
 function getMilisecondsExcuteGroup(group) {
   var arrLines = group.split("\n")
@@ -61,4 +51,21 @@ function averageTime(arr){
     sumTime+=parseInt(element[0])
   });
   return sumTime/arr.length;
+}
+function groupTranaction(string){
+  const regex = /19-3-2020(.*?)(?=end transaction)/gms;
+  var arr=[];
+  let m;
+  while ((m = regex.exec(string)) !== null) {
+      // This is necessary to avoid infinite loops with zero-width matches
+      if (m.index === regex.lastIndex) {
+          regex.lastIndex++;
+      }
+      // The result can be accessed through the `m`-variable.
+      m.forEach((match, groupIndex) => {
+          console.log(`${match}`);
+          arr.push(match);
+      });
+  }
+  return arr
 }
