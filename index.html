@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Analysis transaction logs</title>
+</head>
+
+<body>
+    <input type="file" name="inputfile" id="inputfile" onchange="readFileContent(this)">
+    <p>Fastest Transaction ID:<span id="ID"></span></p>
+    <p>Fastest Transaction Time:<span id="Time"></span></p>
+    <p>Average Transaction Time:<span id="Average"></span></p>
+    <script type="text/javascript">
+        //Lấy log content và đưa vào hàm main để xử lý
+        function readFileContent(target) {
+            var fr = new FileReader();
+            fr.onload = function() {
+                main(fr.result);
+            }
+            fr.readAsText(target.files[0]);
+        }
+
+        function correctDateString(dateString) {
+            var arr = dateString.split('-');
+            return `${arr[1]}-${arr[0]}-${arr[2]}`;
+        }
+
+        function correctTimeString(timeString) {
+            return timeString.replaceAll('.', ':');
+        }
+
+        function getCorrectDateTimeString(dateTimeString) {
+            const [
+                dateString,
+                timeString
+            ] = dateTimeString.split(' ');
+            return `${correctDateString(dateString)} ${correctTimeString(timeString)}`;
+        }
+
+        function main(logTextContent) {
+            //Khúc này em xem log để coi string nó hiển thị khác
+            console.log(logTextContent);
+            //Lấy từng dòng log bằng cách split ký tự xuống dòng \n
+            var logLines = logTextContent.split('\n');
+            console.log(logLines);
+
+            var transactionTimes = [];
+            var fastestTransactionId;
+            var fastestTransactionMilisecond = 99999999999999999;
+            var transObj = {};
+            //Loop từ trên xuống dưới
+            for (let index = 0; index < logLines.length; index++) {
+                var logLine = logLines[index];
+                if (!logLine) { //Dòng log ko có giá trị => end loop
+                    break;
+                }
+
+                if (logLine.indexOf('transaction') < 0) { //Dòng log không có từ khóa transaction => nội dung log => bỏ qua
+                    continue;
+                }
+
+                //Làm sạch log bằng cách replace \t character
+                logLine = logLine.replaceAll('\t', ' ');
+
+                //Lấy date time string bằng cách split log line với từ khóa INFO vì log line có dạng [date time string] INFO [xxxx]
+                const dateTimeString = logLine.split('INFO')[0].trim();
+
+                if (logLine.indexOf('begin') >= 0) { //Phát hiện start transaction bằng từ khóa begin
+                    transObj = {}; //Clear trans obj
+                    //Giữ lại thời điểm start transations bằng unix time stamp
+                    transObj["startTimeStamp"] = new Date(getCorrectDateTimeString(dateTimeString)).getTime();
+                    continue;
+                }
+
+
+                if (logLine.indexOf('end transaction') >= 0) { //Phát hiện end transaction bằng từ khóa begin
+                    //Giữ lại thời điểm end transations bằng unix time stamp
+                    transObj["endTimeStamp"] = new Date(getCorrectDateTimeString(dateTimeString)).getTime();
+
+                    //Tính execute time bằng end time - start time
+                    const transactionTime = transObj["endTimeStamp"] - transObj["startTimeStamp"];
+
+                    //Ghi lại log nhỏ nhất nếu execute time nhỏ hơn lần trước
+                    if (transactionTime < fastestTransactionMilisecond) {
+                        fastestTransactionMilisecond = transactionTime;
+                        // Lấy transaction id bằng cách split 'end transaction ' vì log line có dạng [date time string] INFO [end transaction ][transaction id]
+                        fastestTransactionId = logLine.split('end transaction ')[1];
+                    }
+
+                    //Ghi lại transaction time trong mảng để tính average
+                    transactionTimes.push(transactionTime);
+                }
+
+            }
+
+            document.getElementById("ID").innerHTML = fastestTransactionId;
+            document.getElementById("Time").innerHTML = fastestTransactionMilisecond;
+            document.getElementById("Average").innerHTML = transactionTimes.reduce((a, b) => a + b, 0) / transactionTimes.length;
+        }
+    </script>
+</body>
+
+</html>

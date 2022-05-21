@@ -1,3 +1,7 @@
+Concept:
+là từ file raw, lấy các group transaction begin và end
+sau đó từ các group đó lấy ra thời gian và id bằng regex
+
 
 từ file raw
 chạy lệnh
@@ -42,8 +46,10 @@ arrGroupTransaction.forEach(element => {
 `arrayToTxtFile(result, './result.txt', err => {})`
 
 ================================================================
+
 #Mục tiêu tiếp theo
 1. Nếu xử lý luôn được bằng JS ko cần dùng lệnh awk
 2. lọc theo ngày, và tất cã các ngày
 3. tạo thành module để đưa lên npm
+
 ================================================================
